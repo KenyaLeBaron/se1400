@@ -7,7 +7,7 @@
 }
 
 header{
-    height: 60px;
+    height: 80px;
     grid-row: 2 / 3;
     grid-column: 2 / -2;
     background-color: rgb(33, 160, 223);
@@ -25,7 +25,7 @@ header{
     background-color: rgb(33, 160, 223);
 }
 #head3{
-    height: 170px;
+    height: 220px;
     grid-row: 4 / 5;
     grid-column: 2 / -2;
     background-color: rgb(33, 160, 223);
@@ -34,7 +34,8 @@ nav{
     height: 50px;
     grid-row: 1/ 2;
     grid-column: 2 / -2;
-    background-color: rgb(167, 136, 240);
+    background-color: rgb(167, 136, 240); position: sticky;
+    top: 0;
 }
 #hero {
     height: 450px;
