@@ -1,0 +1,92 @@
+
+#wrapper{
+    display: grid;
+    grid-auto-rows: minmax(0, auto);
+    grid-template-columns:minmax(0px, 1fr) repeat(30, minmax(0, 175px)) minmax(0px, 1fr);
+
+}
+
+#logo{
+    background-image: url(LeBaronLogo.png);
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    grid-row:1/2 ;
+    grid-column:2/10 ;
+    position: sticky;
+    top: 0;
+}
+#logo:hover{
+    background-color: rgb(158, 231, 121);
+}
+nav{
+    height: 50px;
+    grid-row: 1/ 2;
+    grid-column: 10 / -2;
+    background-color: #2caf66; 
+    position: sticky;
+    top: 0;
+}
+nav a{
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem 0rem;
+    display: block;
+}
+nav a:hover{
+    background-color: rgb(158, 231, 121);
+    color: black;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    list-style-type: none;
+}
+nav ul li {
+    width: 80%;
+}
+header{
+    background-image: url(LeBaronSign.webp);
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    grid-row: 2 / 3;
+    grid-column: 2 / -2;
+    background-color: rgb(33, 160, 223);
+}
+#title {
+    height: 130px;
+    grid-row: 2 / 3;
+    grid-column: 2 / 12;
+    background-color: rgb(122, 208, 79);
+    margin-top: 200px;
+    opacity: 0.80;
+}
+#hero {
+     background-image: url("pic.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    margin:5rem 0rem;
+    line-height: 140%;
+    padding: .5rem;
+    grid-row: 5/6;
+    grid-column: 19/ 30;
+    background-color: rgb(62, 206, 124);
+    z-index: 5;
+}
+main{
+    height: 630px;
+    grid-row: 5 /6;
+    grid-column: 2/ -2;
+    background-color: rgb(172, 219, 118);
+}
+footer{
+    height: 50px;
+    grid-row: 8 /9;
+    grid-column: 2/ -2;
+    background-color: rgb(167, 136, 240);
+} 
