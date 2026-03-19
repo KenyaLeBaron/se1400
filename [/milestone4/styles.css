@@ -85,3 +85,6 @@ footer{
     grid-column: 2/ -2;
     background-color: #2caf66;
 } 
+@media screen and (max-width:500px) {
+    
+}  
