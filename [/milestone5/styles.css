@@ -86,12 +86,35 @@ footer{
     background-color: #2caf66;
 } 
 @media screen and (max-width:992px) {
+    #title{
+        font-size: .8rem;
+    }
     main{
-    background-color: rgb(18, 75, 0);
-    }  
+        height: 700px;
+    }
 }
 @media screen and (max-width:768px) {
-    main{
-    background-color: rgb(120, 132, 211);
+    header{
+        display: none;
     }
-}  
+    #title{
+        margin-top: 0;
+        grid-column: -2/2;
+        font-size: 1rem;
+    }
+     nav ul{
+        flex-flow: column nowrap;
+    }
+    nav{
+        grid-column: 2/-1;
+        height: 252px;
+        position: static;
+        width: 100%;
+    }  
+    #logo{
+        display: none;
+    }
+    main{
+        height: 750px;
+    }
+}
