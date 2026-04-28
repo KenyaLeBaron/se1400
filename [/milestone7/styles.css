@@ -5,7 +5,8 @@ body{
     display: grid;
     grid-auto-rows: minmax(0, auto);
     grid-template-columns:minmax(0px, 1fr) repeat(30, minmax(0, 175px)) minmax(0px, 1fr);
-    padding: 2%;
+    margin: 2%;
+    border: 15px double  rgb(25, 123, 8);
 }
 
 #logo{
