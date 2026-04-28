@@ -1,9 +1,11 @@
-
+body{
+    background-color: antiquewhite;
+}
 #wrapper{
     display: grid;
     grid-auto-rows: minmax(0, auto);
     grid-template-columns:minmax(0px, 1fr) repeat(30, minmax(0, 175px)) minmax(0px, 1fr);
-
+    padding: 2%;
 }
 
 #logo{
@@ -60,16 +62,19 @@ header{
 #title {
     height: 130px;
     grid-row: 2 / 3;
-    grid-column: 2 / 12;
+    grid-column: 2 / 16;
     background-color: rgb(122, 208, 79);
     margin-top: 200px;
     opacity: 0.80;
+}
+h1{
+    font-size: 3rem;
 }
 main{
     height: 630px;
     grid-row: 5 /6;
     grid-column: 2/ -2;
-    background-color: rgb(170, 216, 156);
+    background-color: rgb(228, 245, 225);
 }
 img{
     margin: 1.5rem;
@@ -88,6 +93,9 @@ footer{
 @media screen and (max-width:992px) {
     #title{
         font-size: .8rem;
+    }
+    h1{
+        font-size: 2.5rem;
     }
     main{
         height: 700px;
