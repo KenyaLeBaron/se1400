@@ -35,10 +35,10 @@ nav a{
     text-align: center;
     padding: 1rem 0rem;
     display: block;
+    transition: background-color 0.4s ease-in-out 0.1s;
 }
 nav a:hover{
-    background-color: rgb(158, 231, 121);
-    color: black;
+    background-color: #1b7543;
 }
 nav ul{
     margin: 0;
@@ -92,6 +92,11 @@ footer{
     grid-row: 8 /9;
     grid-column: 2/ -2;
     background-color: #2caf66;
+}
+li.active {
+  background-color: #1b7543; /* Color for the active tab */
+  color: rgba(0, 0, 0, 0.2);
+  border-bottom: 2px solid #2caf66;
 } 
 @media screen and (max-width:992px) {
     #title{
